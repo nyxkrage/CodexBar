@@ -24,7 +24,7 @@ z.ai is API-token based. No browser cookies.
 
 ## Parsing + mapping
 - Response fields:
-  - `used` → percentage of quota used in current window.
+  - `used` → percentage of quota used in current window as a decimal from 0-1.
   - `reset` → timestamp for next reset.
 - Reset:
   - `nextResetTime` (ISO8601 timestamp).
