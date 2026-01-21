@@ -750,7 +750,7 @@ final class ProviderSwitcherView: NSView {
 
     private static func weeklyIndicatorColor(for provider: UsageProvider) -> NSColor {
         let color = ProviderDescriptorRegistry.descriptor(for: provider).branding.color
-        return NSColor(deviceRed: color.red, green: color.green, blue: color.blue, alpha: 1)
+        return NSColor(srgbRed: color.red, green: color.green, blue: color.blue, alpha: 1)
     }
 
     private static func switcherTitle(for provider: UsageProvider) -> String {
